@@ -12,11 +12,14 @@ const routes = [{
     {
         path: '/chartline',
         name: 'ChartLine',
-        // route level code-splitting
-        // this generates a separate chunk (about.[hash].js) for this route
-        // which is lazy-loaded when the route is visited.
         component: () =>
             import ( /* webpackChunkName: "ChartLine" */ '../views/ChartLine.vue')
+    },
+    {
+        path: '/chartcircle',
+        name: 'ChartCircle',
+        component: () =>
+            import ( /* webpackChunkName: "ChartCircle" */ '../views/ChartCircle.vue')
     }
 ]
 

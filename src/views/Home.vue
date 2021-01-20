@@ -15,15 +15,15 @@
     </v-btn>
 
     <v-btn
-      class="ma-2" :loading="loading1" :disabled="loading1" color="info" @click="loader = 'loading1'">
-    Grafico de Linea
+      class="ma-2" :loading="loading1" :disabled="loading1" color="success" @click="loader = 'loading1'" to="chartcircle">
+    Grafico Circular
       <template v-slot:loader>
         <span class="custom-loader"><v-icon light>mdi-cached</v-icon></span>
       </template>
     </v-btn>
 
     <v-btn
-      class="ma-2" :loading="loading2" :disabled="loading2" color="info" @click="loader = 'loading2'">
+      class="ma-2" :loading="loading2" :disabled="loading2" color="warning" @click="loader = 'loading2'">
     Grafico de Linea
       <template v-slot:loader>
         <span class="custom-loader"><v-icon light>mdi-cached</v-icon></span>
