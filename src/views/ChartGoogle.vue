@@ -1,11 +1,9 @@
 <template>
   <div class="container">
     <p class="display-1 font-weight-regular mt-5 mb-5">Gráfico de línea</p>
-    <line-chart :data="chartData"></line-chart>
+    <geo-chart :data="dataCountry"></geo-chart>
     <p class="display-1 font-weight-regular mt-5 mb-5">Gráfico de línea color rojo</p>
-    <line-chart :data="dataChart" :colors="['#b00']">></line-chart>
-      <p class="display-1 font-weight-regular mt-5 mb-5">Gráfico de línea sin curva en linea</p>
-    <line-chart :data="dataChart" :colors="['#D4AC0D']" :curve="false">></line-chart>
+    <timeline :data="[['Washington', '1789-04-29', '1797-03-03'], ['Adams', '1797-03-03', '1801-03-03']]"></timeline>
     <div class="d-flex">
     <v-btn color="error" class="ma-2 white--text" to="/">
       Volver
@@ -16,10 +14,10 @@
 </template>
 
 <script>
-import {mapState} from 'vuex'
+import { mapState } from 'vuex'
 export default {
   computed: {
-    ...mapState(['chartData', 'dataChart'])
+    ...mapState(['chartData', 'dataChart', 'dataCountry'])
   }
   
 }

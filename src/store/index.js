@@ -30,6 +30,14 @@ export default new Vuex.Store({
             'Sabado': 11,
             'Domingo': 1,
         },
+        dataCountry: [
+            ['United States', 44],
+            ['Germany', 23],
+            ['Brazil', 22],
+            ['Chile', 44],
+            ['Italy', 23],
+            ['Noruega', 22],
+        ]
 
     },
     mutations: {},

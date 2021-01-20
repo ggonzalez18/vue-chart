@@ -26,6 +26,12 @@ const routes = [{
         name: 'ChartColumn',
         component: () =>
             import ( /* webpackChunkName: "ChartColumn" */ '../views/ChartColumn.vue')
+    },
+    {
+        path: '/chartgoogle',
+        name: 'ChartGoogle',
+        component: () =>
+            import ( /* webpackChunkName: "ChartGoogle" */ '../views/ChartGoogle.vue')
     }
 ]
 

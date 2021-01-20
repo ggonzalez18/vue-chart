@@ -31,8 +31,8 @@
     </v-btn>
 
     <v-btn
-      class="ma-2" :loading="loading3" :disabled="loading3" color="info" @click="loader = 'loading3'">
-    Grafico de Linea
+      class="ma-2" :loading="loading3" :disabled="loading3" color="info" @click="loader = 'loading3'" to="/chartgoogle">
+    Graficos de Google
       <template v-slot:loader>
         <span class="custom-loader"><v-icon light>mdi-cached</v-icon></span>
       </template>
