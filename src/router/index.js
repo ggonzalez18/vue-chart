@@ -20,6 +20,12 @@ const routes = [{
         name: 'ChartCircle',
         component: () =>
             import ( /* webpackChunkName: "ChartCircle" */ '../views/ChartCircle.vue')
+    },
+    {
+        path: '/chartcolumn',
+        name: 'ChartColumn',
+        component: () =>
+            import ( /* webpackChunkName: "ChartColumn" */ '../views/ChartColumn.vue')
     }
 ]
 

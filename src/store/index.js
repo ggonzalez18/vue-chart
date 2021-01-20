@@ -19,8 +19,18 @@ export default new Vuex.Store({
             '2017-05-15': 4,
             '2017-05-16': 3,
             '2017-05-17': 7,
-            '2017-05-18': 0,
-        }
+            '2017-05-18': 1,
+        },
+        dataDay: { // se puede conectar tipo objeto
+            'Lunes': 9,
+            'Martes': 5,
+            'Miercoles': 14,
+            'Jueves': 3,
+            'Viernes': 7,
+            'Sabado': 11,
+            'Domingo': 1,
+        },
+
     },
     mutations: {},
     actions: {},
